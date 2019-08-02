@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="Scripts\jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="Scripts\underscore-1.8.3.js"></script>
+	<script type="text/javascript" src="Scripts\SpiralChart.js"></script>
+	<script type="text/javascript" src="Scripts\randomColor.js"></script>
+	<style type="text/css">
+.element {
+    position: relative;
+    cursor: pointer;
+}
+
+.element .tooltiptext {
+    visibility: hidden;
+    width: 90px;
+    background-color: gray;
+    color: #fff;
+    text-align: center;
+    border-radius: 35px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 100%;
+    margin-left: -60px;
+    border:1px solid black;
+}
+
+.element .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.element:hover .tooltiptext {
+    visibility: visible;
+}
+body{
+	text-align:center;
+}
+#chartDiv{
+
+}
+	</style>
+</head>
+<body>
+<input placeholder="enter the number" value='' id="number"/>
+<button onClick="generate()">Submit</button>
+<br>
+<br>
+<div id="chartDiv">
+
+</div>
+</body>
+</html>
